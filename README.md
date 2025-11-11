@@ -47,7 +47,11 @@ Output / Artefakte
 
 Weiteres / Hinweise
 
-- Standardmäßig werden Zeilen mit fehlenden Antworten in Q1..Q10 entfernt (`dropna`). Wenn du Imputation möchtest, passe die entsprechende Zelle an.
+- Standardmäßig werden Zeilen mit fehlenden Antworten in Q1..Q10 entfernt (`dropna`). Alternativ ist "Imputation" möglich — kurz: fehlende Item‑Werte werden durch plausibel geschätzte Ersatzwerte ersetzt (z. B. Pro‑Rating: Hochskalierung der beantworteten Items auf 10 Items; oder Multiple Imputation zur Berücksichtigung von Unsicherheit).
+- Beispiele/Empfehlung:
+  - Wenig fehlende Items (z. B. ≤1 pro Proband): Pro‑Rating (schnell, praktikabel).
+  - Mehrere fehlende Items oder viele betroffene Fälle: Multiple/Iterative Imputation (z. B. MICE) oder Datenqualitätsmaßnahme.
+  - Die konkrete Methode sollte dokumentiert werden; das Notebook implementiert Imputation nicht automatisch.
 - Das Notebook enthält eine robuste `mappe_spaltennamen()` Funktion, die versucht, lange Google‑Forms‑Fragetexte auf Q1..Q10 zu mappen. Anpassungen sind möglich, falls deine Formulierungen stark abweichen.
 
 Kontakt
