@@ -44,7 +44,6 @@ Output / Artefakte
 
 - `sus_google_forms_export.csv` — Eingabe/Beispieldaten (kann vom Generator überschrieben werden)
 - `sus_score_distribution_interpreted.png` — Visualisierung mit Interpretationsbändern
-- `SUS-Analyse.ipynb.backup-before-repair` — Backup des Notebooks vor Reparaturen (falls vorhanden)
 
 Weiteres / Hinweise
 
